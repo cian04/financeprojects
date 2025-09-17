@@ -5,14 +5,17 @@ The tool allows real-time visualization with sliders for **spot (S)**, **strike 
 
 ---
 
-# The Greeks and their variations
+# The Greeks and theyre variation
 
-- Δ = ∂V/∂S
-  1) Sensitivity of option price to changes in the underlying price.
-  2) Interpretable as the probability a call/put finishes ITM (heuristic).
+- Delta (∂V/∂S): 
+ 1) Sensitivity of option price to changes in the underlying price.
+ 2) Probability of call or put to finish ITM
+- If \( S \) is much greater than \( K \):  
+  → the call is deeply **ITM** → \(\Delta \approx 1\).  
 
-- Quick rules (signs only, no arrows):
-  - If K is much smaller than S (K ≪ S): deep ITM call; Δ ≈ 1.
-  - If K is much larger than S (K ≫ S): deep OTM call; Δ ≈ 0.
-  - Higher volatility (σ): Δ tends toward 0.5.
-  - For an OTM call, longer maturity (T): Δ increases.
+- If \( S \) is much smaller than \( K \):  
+  → the call is deeply **OTM** → \(\Delta \approx 0\).  
+
+- Delta tends toward **0.5** when volatility \( \sigma \) ↑ (more uncertainty → the call looks like a 50/50 bet).  
+
+- For an OTM call: \(\Delta\) ↑ when maturity \( T \) ↑ (more time = higher chance to end up ITM).  
