@@ -6,7 +6,7 @@ Analytical Black-Scholes pricing with continuous dividend yield.
 
 | Parameters | BS Price | Benchmark |
 |---|---|---|
-| S=100, K=100, r=2%, σ=20%, T=1y | 8.916 | 8.916 (QuantLib) |
+| S=100, K=100, r=2%, sigma=20%, T=1y | 8.916 | 8.916 (QuantLib) |
 
 Pricing error vs analytical benchmark: **< 0.001%**
 ```bash

@@ -1,16 +1,16 @@
 # Black-Scholes Greeks Visualizer
 
-Interactive dashboard to explore option Greeks (Δ, Γ, Vega, Θ) in real time under the Black-Scholes model.
+Interactive dashboard to explore option Greeks (Delta, Gamma, Vega, Theta) in real time under the Black-Scholes model.
 
 ## What it does
 
-- Plots Delta, Gamma, Vega, Theta as a function of the underlying spot S
-- Live sliders for S, K, T, σ, r — all four charts update simultaneously
+- Plots Delta, Gamma, Vega, Theta as a function of the underlying spot price S
+- Live sliders for S, K, T, sigma, r — all four charts update simultaneously
 - Call / Put toggle, optional log-scale on S axis
 
 ## Key results
 
-| Greek | ATM call (S=K=100, σ=20%, T=0.5y, r=2%) |
+| Greek | ATM call (S=K=100, sigma=20%, T=0.5y, r=2%) |
 |---|---|
 | Delta | 0.527 |
 | Gamma | 0.028 |

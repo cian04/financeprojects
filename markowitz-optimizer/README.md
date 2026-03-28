@@ -4,7 +4,7 @@ Long-only mean-variance optimization — Equal Weight, Min Variance, Max Sharpe 
 
 ## Key results
 
-Backtested on 5-asset S&P 500 universe (AAPL, MSFT, JPM, JNJ, XOM), 2019–2024:
+Backtested on 5-asset S&P 500 universe (AAPL, MSFT, JPM, JNJ, XOM), 2019-2024:
 
 | Strategy | Ann. Return | Ann. Vol | Sharpe | Max DD |
 |---|---|---|---|---|
@@ -17,3 +17,10 @@ Backtested on 5-asset S&P 500 universe (AAPL, MSFT, JPM, JNJ, XOM), 2019–2024:
 pip install numpy pandas scipy matplotlib
 python src/markowitz.py --csv data/prices_yf.csv --rf 0.02 --plot
 ```
+
+## Implementation notes
+
+- Log-returns used throughout to avoid rebalancing bias
+- Arithmetic expected return derived from log-return moments
+- Max drawdown computed from historical path, not parametric
+- Optimizer: scipy SLSQP with long-only constraints

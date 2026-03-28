@@ -1,28 +1,21 @@
-# Finance Projects 
+# Quantitative Finance Projects
 
-This repository is a collection of my quantitative finance projects, built during my studies and personal research.  
-Each folder contains a self-contained project with Python code, documentation, and results.
+Personal research projects in quantitative finance, built during my Master in Finance & Quantitative Engineering at ECE Paris and my internship at Société Générale (FX & Money Market desk).
 
----
+## Projects
 
-##  Projects Overview
+| Project | Topics | Key results |
+|---|---|---|
+| [Black-Scholes Greeks Visualizer](./greek-visualizer) | Options, Greeks, Black-Scholes | Real-time Delta/Gamma/Vega/Theta across full S range |
+| [European Call Pricer + GBM Simulator](./option-pricing) | Options pricing, Monte Carlo | Pricing error < 0.001% vs analytical |
+| [Markowitz Portfolio Optimizer](./markowitz-optimizer) | Portfolio theory, Optimization | Max Sharpe 1.44 on S&P 500 universe |
 
-### 1. **Live Greek Visualizer**
-Interactive dashboard to explore option Greeks (Delta, Gamma, Vega, Theta) under the Black–Scholes model.
-- Built with **Python, NumPy, Matplotlib**.
-- Real-time sliders for spot price, strike, volatility, maturity, and interest rate.
-- Visualizes how Greeks change with market conditions.
--  Goal: gain intuition about hedging, moneyness, and option risk management.
+## Stack
 
- [Project folder](./LiveGreekVisuliser)
+Python 3.11 · NumPy · Pandas · SciPy · Matplotlib
 
----
+## Author
 
-### 2. **Markowitz Portfolio Optimizer**
-Implementation of Modern Portfolio Theory.
-- Portfolio allocation with **Equal Weight, Minimum Variance, Maximum Sharpe**.
-- Backtesting on historical financial data.
-- Efficient frontier visualization.
-- Includes performance metrics: returns, volatility, Sharpe ratio, max drawdown.
-
- [Project folder](./Markowitz)
+**Cian Higgins** — M1 Finance & Quantitative Engineering, ECE Paris  
+Middle Office Trade Support intern @ Société Générale (FX & Money Market desk, 2026)  
+[linkedin.com/in/cian-higgins-804867261](https://www.linkedin.com/in/cian-higgins-804867261/)
